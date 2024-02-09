@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comida Mexicana</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f3f3f3;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .prato {
+        margin-bottom: 20px;
+    }
+
+    .descricao {
+        font-style: italic;
+    }
+
+    .pedido {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .pedido button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .pedido button:hover {
+        background-color: #45a049;
+    }
+
+    /* Estilo para as imagens */
+    .prato img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Comida Mexicana</h1>
+    
+    <div class="prato">
+        <input type="checkbox" id="taco" name="prato" value="taco">
+        <label for="taco"><strong>Taco</strong></label>
+        <img src="taco.jpg" alt="Taco">
+        <p class="descricao">Um taco é uma tortilha de milho ou farinha enrolada e recheada com carne, feijão, queijo, alface e outros ingredientes.</p>
+    </div>
+    
+    <div class="prato">
+        <input type="checkbox" id="burrito" name="prato" value="burrito">
+        <label for="burrito"><strong>Burrito</strong></label>
+        <img src="burrito.jpg" alt="Burrito">
+        <p class="descricao">Um burrito é uma tortilha de farinha grande e recheada com carne, arroz, feijão, queijo, guacamole, salsa e/ou outros ingredientes.</p>
+    </div>
+    
+    <div class="prato">
+        <input type="checkbox" id="enchilada" name="prato" value="enchilada">
+        <label for="enchilada"><strong>Enchilada</strong></label>
+        <img src="enchilada.jpg" alt="Enchilada">
+        <p class="descricao">Uma enchilada é uma tortilha de milho enrolada e recheada com carne, queijo e molho de pimenta.</p>
+    </div>
+    
+    <div class="prato">
+        <input type="checkbox" id="guacamole" name="prato" value="guacamole">
+        <label for="guacamole"><strong>Guacamole</strong></label>
+        <img src="guacamole.jpg" alt="Guacamole">
+        <p class="descricao">Guacamole é uma pasta de abacate com tomate, cebola, coentro, suco de limão e sal.</p>
+    </div>
+    
+    <div class="prato">
+        <input type="checkbox" id="quesadilla" name="prato" value="quesadilla">
+        <label for="quesadilla"><strong>Quesadilla</strong></label>
+        <img src="quesadilla.jpg" alt="Quesadilla">
+        <p class="descricao">Uma quesadilla é uma tortilla de farinha ou milho recheada com queijo e, por vezes, outros ingredientes, que é depois grelhada ou frita.</p>
+    </div>
+    
+    <div class="pedido">
+        <button type="submit">Fazer Pedido</button>
+    </div>
+</div>
+
+</body>
+</html>
